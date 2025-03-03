@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Property</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Display Property in CSS</h1>
+
+    <div class="container">
+        <h2>Explanation</h2>
+        <p>The <strong>display property</strong> of css is used to modify how an element will be displayed like we can change a element to an inline element or a block level element using this property despite the orginal types.Also we can align elements using this.We can use flex.We also make certain text disappear and much more.Following are some of the most important and used values for this property.</p>
+    </div>
+
+    <div class="container">
+        <h2>Display Inline</h2>
+        <h3>Explanation:</h3>
+        <p>As the name says this value of display property converts an element's type to inline regardless of its orginal.<strong>Note:</strong> Setting other dimension properties like width, height, margin or padding is not allowed in Inline Display, means that any of these properties wont take effect on inline type elements or elements made inline using this value of display property.</p>
+        <h4>Example:</h4>
+        <div class="inline">This is div 1</div>
+        <div class="inline">This is div 2</div>
+        <p>Here both the <code>divs</code> are block level elements but as i used <code>display:inline;</code> the divs became inline and are displayed side by side.</p>
+    </div>
+
+    <div class="container">
+        <h2>Display Inline-Block</h2>
+         <h3>Explanation:</h3>
+         <p>As I said before using the inline value the sizing properties wont take effect but if we use <code>inline-block</code> those properties will also take effect.</p>
+         <h4>Example:</h4>
+         <div class="inline-block">This is div 1</div>
+        <div class="inline-block">This is div 2</div>
+        <p>Here i applied some padding and margin to these divs and it applied to them despite them being inline.</p>
+    </div>
+
+    <div class="container">
+        <h2>Display Block</h2>
+        <h3>Explanation:</h3>
+        <p>As the name says this value of display property converts an element's type to block regardless of its orginal.</p>
+        <h4>Example:</h4>
+        <span class="block">This is span 1</span>
+        <span class="block">This is span 2</span>
+        <p>Here both the <code>spans</code> are inline elements but as i used <code>display:block;</code> the spans became block level elements and are displayed one below the other.</p>
+    </div>
+
+    <div class=container>
+        <h2>Display None and visibility(hidden)</h2>
+        <h3>None:</h3>
+        <h4>Explanation:</h4>
+        <p>This value of display property is used to make an element disappear from the page.</p>
+        <h4>Example:</h4>
+        <div class="none">This is div 1</div>
+        <div class="none">This is div 2</div>
+        <p>Here both the <code>divs</code> are displayed but as i used <code>display:none;</code> the divs disappeared from the page.</p>
+        <h3>visibility(hidden):</h3>
+        <h4>Explanation:</h4>
+        <p>To make a certain element hidden means it will not show but will take the space we use visibility property <code>visibility:hidden;</code></p>
+        <h4>Example:</h4>
+        <div class="hidden">This is div 1</div>
+        <div class="hidden">This is div 2</div>
+        <p>Here the divs are hidden but they are taking their respective spaces.</p>
+    </div>
+
+    <div class="container">
+        <h2>For more info</h2>
+        <p>For more information about display property visit: 
+        <a href=" https://developer.mozilla.org/en-US/docs/Web/CSS/display" target="_blank">Mdn docs</a></p>
+    </div>
+</body>
+</html>

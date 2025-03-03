@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Property</title>
+    <style>
+        body {
+            background-color: aliceblue;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            box-sizing: border-box;
+        }
+
+        h1,h2 {
+            text-align: center;
+        }
+
+        .heading:hover {
+            text-shadow: 5px 6px 30px darkorchid;
+        }
+
+        div {
+            margin: 10px auto ;
+            padding: 10px;
+            border: 2px inset black;
+            box-shadow: 5px 9px 35px -2px #FC46AA;
+            background-color: #FCBACB;
+            width: 95vw;
+        }
+
+        #note{
+            font-style: italic;
+            font-weight: bold;
+        }
+
+        span {
+            display: block;
+        }
+        p{
+            text-indent: 2em;
+        }
+        table {
+             border-collapse: collapse;
+             width: 100%;
+             margin: 20px 0;
+             font-family: Arial, sans-serif;
+        }
+        td {
+             border: 2px solid black;
+             padding: 12px;
+             text-align: left;
+        }
+        th {
+            background-color: #f5f5f5;
+            border: 2px solid black;
+            padding:12px;
+            text-align:center;
+            font-weight:bolder;
+         }
+        tr:nth-child(even) {
+                background-color: #f9f9f9;
+        }
+        tr:nth-child(odd){
+            background-color: #D3D3D3;
+        }
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            margin:7px 2px;
+            position:relative;
+            bottom: 7px;
+            padding:5px;
+            background-color: black;
+            color:white;
+            border: 2px outset grey;
+        }
+        ul li{
+            padding: 2px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="heading">Position-Property</h1>
+    <div>
+        <h2>Position Property</h2>
+        <h3 class="heading">Explanation:</h3>
+        <p>The position property specifies the type of positioning method used for an element.</p>
+        <p>There are five different position values:</p>
+        <ul>
+            <li>static</li>
+            <li>relative</li>
+            <li>fixed</li>
+            <li>absolute</li>
+            <li>sticky</li>
+        </ul>
+        <p>Elements are then positioned using the top, bottom, left, and right properties. However, these properties will not work unless the position property is set first. They also work differently depending on the position value.</p>
+
+        <h2 class="heading">Important note</h2>
+        <h3 class="heading">Note:</h3>
+        <p id="note">I will explain all the properties here but i will show their examples on separate html files which will be present inside the parent folder <code>Position Property</code>.You can access them from that folder, I will put a link to them in future.</p>
+    </div>
+
+    <div>
+        <h2 class="heading">Static(Default)</h2>
+        <h3 class="heading">Explanation:</h3>
+        <p>It is the default value for position.Elements with this property will show as they are placed like if a element occurs first it will occur first and if one occurs afterwards it will occur afterwards.Think of it like the normal way things are placed in a website unless you change it with other position properties.Its <strong>syntax</strong> is like <code>position:static;</code> but as it is the default value you dont need to set this value unless you want to remove certain position effects.This property has some <strong>limitations</strong>.Which are: <span>You cant use any property related to position property if the value of position property is set to 0.These properties can be <code>top,bottom,left,right,z-index.</code>These properties will only work if the position property's value is set to something aside from static.</span></p>
+        <h4 class="heading">Example:</h4>
+        <p>The best example is this webpage, it contains 2 divs whose position is static means they are where they were placed.This div was placed after the first div so its position is after that, if i were to use other properties of position i could show this div on top of other div and other things like that.</p>
+    </div>
+
+    <div>
+        <h2 class="heading">Relative</h2>
+        <h3 class="heading">Explanation:</h3>
+        <p>With relative property you can change the position of a container or element using offset properties{top,bottom,left,right} and also use z-index, which i will explain below.<strong>Important part</strong> is that it will reserve the space for element meaning no other element will over take the place the place of the container or element displaced.This property will also be useful when we will use absolute property but we will discuss that later.</p>
+
+        <h3 class="heading">Z-index:</h3>
+        <p><strong>Z-index</strong> decides which element will stack over the other when any type of positioning is used other than static positioning or default one with offset properties{top,bottom,left,right}.The element or container with <strong>higher</strong> z-index value will stack over the one with lower z-index value.Some important things to note about z- index:</p>
+        <ul>
+            <li>Z-index will only work if position property is set to any other value aside from static value or simply said you will have to assign a position property with value other than static value for z-index to work.</li>
+            <li>Z-index value should be greater than <code>0</code> as its the default value and has no effect but also dont use very <strong>large</strong> values for stacking elements or containers over other as it may lead to z-index not working.</li>
+            <li>When elements have the same stacking context and no explicit z-index values, the browser stacks them in the order they appear in the HTML source code.</li>
+            <li>Elements that appear later in the HTML are stacked on top of elements that appear earlier.</li>
+        </ul>
+        <p>For more <strong>information</strong> on z-index visit: <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/CSS/z-index">z-index</a> .Experiment with values on the website to grasp the concept.</p>
+
+        <h3 class="heading">Offset properties:</h3>
+        <p>These are properties which are used to modify position of a element or container.It has <code>4</code> values described below but at one time you can use only 1 of the two pairs like you can use one of top or bottom at <strong>once</strong>.Similarly you can use one of left or right at <strong>once</strong>.These values are:</p>
+        <ul>
+            <li><strong>top:</strong>Moves element down.</li>
+            <li><strong>bottom:</strong>Moves element up.</li>
+            <li><strong>left:</strong>Moves element left.</li>
+            <li><strong>right:</strong>Moves element right.</li>
+        </ul>
+
+        <h3 class="heading">Example:</h3>
+        <p>You can see the demonstration of relative positioning in the "Example-relative.html" file in this folder.Here is the explanation of the example:</p>
+        <h4 class="heading">Explanation:</h4>
+        <p>In the example I used 4 divs but i used relative positioning on the first two divs.I assigned <code>background-color: green; position:relative; bottom: 30px; left: 20px;</code> to the <strong>second</strong> div meaning now it will be a little up from bottom by 30 pixels and a little left by 20 pixels.On the <strong>first</strong> div i used z-index with value 1 which is greater then the z-index value of div 2{I didnt assigned one so as default value is 0 so the z-index value of div1 is greater} So div1 stacks over the div2 as div 2 is positioned a little bit above.</p>
+    </div>
+
+    <div>
+        <h2 class="heading">Absolute</h2>
+        <h3 class="heading">Explanation:</h3>
+        <p>Absolute positioning is like relative positioning but with slight differences.These differences are explaned below:</p>
+        <ul>
+            <li><strong>Purpose:</strong> It removes an element from the normal document flow means if we use a offset property then when it gets displaced the elements below it will take its space and will stack above them(unless you have used a z-index value on other element).Aside from this it positions an element relative to its nearest <strong>positioned element</strong> meaning if we used a offset property then it will take effect according to the nearest element with any position value aside from static.If the nearest element doesnt have a assigned position or its position value is static then it will position itself according to the html or root tags.I will a example demonstrating it.</li>
+            <li><strong>Offset properties:</strong> In absolute positioning offset properites work in quite opposite way like if you assign 20px bottom then instead of moving up the element will move downwards.Its because of the <strong>reference points</strong> as in absolute positioning the reference is according to its positioned ancestor so in absolute positioning the element will move up from the bottom of the element.So its effect may seem opposite.</li>
+            <li><strong>Margin collapse</strong> Margins dont collapse in absolute positioning.This is one the main differences between relative and absolute positioning.Margin collapse only work when elements are in the normal document flow meaning they are either in static positioning or relative positioning so their margins will collapse or the margin whose value is greater will take effect but its <strong>not</strong> the case in absolute positioning as the absolutely positioned element is taken out of the normal document flow so its margins will not collapse with other elements margins instead it will stay <strong>separate</strong>.</li>
+        </ul>
+        <h3 class="heading">Use-cases:</h3>
+        <p>Absolute positioning is used for various purposes.Some of them are:</p>
+        <ul>
+            <li>Overlays, dropdown menus, or tooltips that need precise placement.</li>
+            <li>Elements that should ignore document flow (e.g., a fixed sidebar).</li>
+        </ul>
+        <h3 class="heading">Differences between relative and absolute positioning:</h3>
+        <table>
+            <caption><strong>Relative VS Absolute</strong></caption>
+            <thead>
+              <tr>
+                <th>Aspect</th>
+                <th>Relative Positioning</th>
+                <th>Absolute Positioning</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Document Flow</strong></td>
+                <td>Stays in flow (original space reserved)</td>
+                <td>Removed from flow (no space reserved)</td>
+              </tr>
+              <tr>
+                <td><strong>Positioning Context</strong></td>
+                <td>Relative to its normal position</td>
+                <td>Relative to nearest positioned ancestor</td>
+              </tr>
+              <tr>
+                <td><strong>Margin Collapsing</strong></td>
+                <td>Margins collapse with adjacent elements</td>
+                <td>Margins don't collapse with flow elements</td>
+              </tr>
+              <tr>
+                <td><strong>Use Cases</strong></td>
+                <td>Minor adjustments (e.g., nudging elements)</td>
+                <td>Precise placement (e.g., modals, tooltips)</td>
+              </tr>
+              <tr>
+                <td><strong>Ancestor Dependency</strong></td>
+                <td>No dependency</td>
+                <td>Requires positioned ancestor (e.g., relative, fixed)</td>
+              </tr>
+            </tbody>
+          </table>
+        <h3 class="heading">Example:</h3>
+        <p>You can see the demonstration on the "Exampe-absolute.html" file. I will explain whats happening with each div below:</p>
+        <h4 class="heading">Explanation:</h4>
+        <ul>
+            <li><strong>Parent-div:</strong> There are 2 parent divs and each parent div contains 4 child-divs and second child-divs of both parent-divs have been assigned different classes and are set to position absolute. The 2nd parent div is relatively positioned while the first isnt relatively positioned.</li>
+            <li><strong>rl div:</strong> The child-div of first parent with "rl" class has position absolute and has offset property set to <code>top:0px</code> As the parent div of "rl div" isnt positioned so it will position itself to its nearest positioned ancestor(root element:body, as they are the last elements.) So the rl div will stick to the top of the document page instead of sticking on to the top of its parent div.</li>
+            <li><strong>rl-parent:</strong> The child-div of second parent with "rl-parent div" class has position absolute and has offset property set to <code>top:0px;</code> As the parent div of "rl-parent div" is relatively positioned so it will stick to the top of its parent. Ignore the little space from top because its due to margin as margin collapsing dont work in absolute positioning.</li>
+        </ul>
+    </div>
+
+    <div>
+        <h2 class="heading">Fixed</h2>
+        <h3 class="heading">Explanation:</h3>
+        <p>Fixed positioning is another positioning value that is used to make a element or container become attached to your screen its like someone has nailed it there, just like absolute positioning the fixed element is also taken out of the normal document flow. Some key behaviours of fixed positioning are:</p>
+        <ul>
+            <li><strong>Document flow:</strong> The element is completely removed from the document flow meaning its space is not reserved in the document.</li>
+            <li><strong>Position:</strong> Its position relative to the viewport meaning that its not positioned relative to any ancestor positioned element or parent element like absolute posiioning instead its positioned relative to the viewport size of the web window and offset properties take effect on it according to it.</li>
+            <li><strong>Scroll:</strong> It remains in the exact same position even when the page is scrolled meaning scrolling past it wont hide it(you'll see it in the example).</li>
+            <li><strong>Boundries:</strong> It ignores the parent containers boundries meaning if you scroll past a fixed positioned element it will ignore the boundries of its parent and push past it.</li>
+            <li><strong>Other elements:</strong> Other elements will flow as if there wasnt any fixed element because it is taken out of the normal document flow.</li>
+            <li><strong>Offset properties:</strong> You position it using offset properties.</li>
+        </ul>
+        <h3 class="heading">Usecases:</h3>
+        <p>Some common purposes for which fixed positioning is used are:</p>
+        <ul>
+            <li>Navigation bars that stay on top of the screen as you scroll.</li>
+            <li>Cookie activition reminders that will stay there until you accept or decline.</li>
+            <li>Chat widgets that will stay in the screen for ease of use.</li>
+            <li>Modal overlays that stay centered.</li>
+            <li>Back to top buttons that are always accessible.</li>
+        </ul>
+        <h3 class="heading">Example:</h3>
+        <p>An example of fixed positioning is explained below and its demonstration is done on a different file present in the home folder.</p>
+        <h4 class="heading">Explanation:</h4>
+        <p>In the example i used 4 divs and i used fixed positioning on the 2nd div and i used offset properties to position it at the bottom of the screen and a little bit from the left side of the screen. The div will stay there even if you scroll past it and it will ignore the boundries of its parent div and will push past it.</p>
+    </div>
+</body>
+
+</html>

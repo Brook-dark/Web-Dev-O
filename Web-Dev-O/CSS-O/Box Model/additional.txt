@@ -1,0 +1,38 @@
+==========Some border styles:
+solid:  Creates a border with a continuous unbreaking line.
+dashed: Creates a border with dashed lines.
+dotted: Creates a border with dotted lines.
+double: Creates a border with two lines.
+groove: Creates a 3D-like grooved effect.
+ridge:  Creates a 3D-like ridged effect.
+inset:  Creates a 3D-like inset effect.
+outset: Creates a 3D-like outset effect.
+none:   Removes the border entirely.
+hidden: Removes the border, but still reserves space for it in the layout.
+
+===========Margin Alignment:
+we can set a alignment for margins like we can design it from top to bottom only of from side to left. If we want to do that then we need to assign the pixels or other values in this order:
+=margin: top right bottom left;
+the first one defines the value that will take effect from top, right defines the value that will take effect from right etc. Remember this is the pattern to align all four sides.
+Now suppose you only want to modify the margins of element from top and left but according to this pattern you will also need right and bottom value, in this case you can do this :
+.my-element {
+  margin: 20px 0 0 30px; 
+}
+you can set the values you want to skip to '0'.
+Another thing that if you only right one value like this:
+=margin: 20px;
+then it will take effect on all sides.
+
+=============Formula to calculate total height and width:
+Total Width = Width + Left Padding + Right Padding + Left Border + Right Border + Left Margin + Right Margin.
+
+Total Height = Height + Top Padding + Bottom Padding + Top Border + Bottom Border + Top Margin + Bottom Margin.
+
+===============Margin collapse:
+Margin collapsing is a CSS behavior where the vertical margins of adjacent block-level elements (like paragraphs, headings, divs) can combine into a single margin. This can sometimes lead to unexpected spacing between elements.
+
+Key Points:
+Vertical Margins: Margin collapsing primarily affects the top and bottom margins of elements.
+Adjacent Elements: It occurs between elements that are directly next to each other.
+Largest Margin Wins: When margins collapse, the larger of the two margins determines the final spacing.
+Can Involve Parent-Child Relationships: Margin collapsing can also happen between a parent element and its child elements.

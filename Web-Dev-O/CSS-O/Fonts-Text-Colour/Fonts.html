@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fonts in CSS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&display=swap" rel="stylesheet">
+
+    <style>
+        body{
+            background-color:bisque; 
+        }
+        h1,h2{
+            text-align: center;
+            color:rgb(0, 0, 0)
+        }
+        .container{
+            margin:10px;
+            background-color:blanchedalmond;
+        }
+        .font-size1{
+            font-size: large;
+        }
+        .font-size2{
+            font-size: 15px;
+        }
+        .font-style1{
+            font-style:italic;
+        }
+        .font-style2{
+            font-style:oblique;
+        }
+        .font-variant1{
+            font-variant:small-caps;
+        }
+        .font-variant2{
+            font-variant:all-small-caps;
+        }
+        .font-weight1{
+            font-weight: 300;    
+        }
+        .font-weight2{
+            font-weight:bold;
+        }
+        .font-weight3{
+            font-weight:bolder;
+        }
+        .font-weight4{
+            font-weight:lighter;
+        }
+        .font-family1{
+            font-family:'Courier New', Courier, monospace
+        }
+        .font-family2{
+            font-family:'Verdana', Geneva, Tahoma, sans-serif;
+        }
+        .custom-font{
+            font-family: 'Baloo Bhai 2', cursive,serif,sans-serif;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>Fonts in CSS</h1>
+    <h2>Important font properties :</h2>
+
+    <div class="container">
+        <h3>○ Font size :</h3>
+        <p>The font size property sets the size of the fonts. It has some predefined sizes, such as small, medium, large, larger, etc.The most commonly used units for font size are px (pixels), em (ems), rem (root ems), and percentage (%).</p>
+        <h3>Examples :</h3>
+        <p class="font-size1"> This is an example of predefined size(large).</p>
+        <p class="font-size2"> This is an example of size unit(px)</p>
+    </div>
+
+    <div class="container">
+        <h3>○ Font styles :</h3>
+        <p>The font style property sets the style of the font, such as normal, italic, oblique, or inherit.</p>
+        <h4>○ Quick Notes :</h4>
+        <p>Normal is the default font style.Italic is used to make the text appear italic.Oblique is similar to italic but has less bend.Inherit is used when you want to use the same font style as the parent element, like if i assigned a to div then all the elements inside div will also have same font style.Inherit can also be used with other properties like color, background-color, etc.</p>
+        <h3>Examples :</h3>
+        <p> This is an example of normal font style.</p>
+        <p class="font-style1"> This is an example of italic font style.</p>
+        <p class="font-style2"> This is an example of oblique font style.</p>
+    </div>
+
+
+    <div class="container">
+        <h3>○ Font variants :</h3>
+        <p>The font-variant property sets whether a font should be styled with a normal, small-caps, or all-small-caps font.</p>
+        <h3>Examples :</h3>
+        <p class="font-variant1"> This is an example of small-caps font style.</p>
+        <p class="font-variant2"> This is an example of all-small-caps font style.</p>
+    </div>
+
+    <div class="container">
+        <h3>○ Font weight :</h3>
+        <p>The font weight property defines the boldness of the text.It ranges from 100(thin) to 900(super bold).It also contains predefined values such as bold,bolder and lighter.</p>
+        <h3>Examples :</h3>
+        <p class="font-weight1">This is an example of 300 range font weight.</p>
+        <p class="font-weight2">This is an example of bold font weight.</p>
+        <p class="font-weight3">This is an example of bolder range font weight.</p>
+        <p class="font-weight4">This is an example of lighter range font weight.</p>
+    </div>
+
+    <div class="container">
+        <h3>○ Font family :</h3>
+        <p>The font-family property specifies the font for an element. The font-family property can hold several font names as a "fallback" system. If the browser does not support the first font, it tries the next font.Each font is separated by commas priority wise.</p>
+        <h3>Generic font family :</h3>
+        <p style="font-family:serif;"> 1- serif: generic serif fonts (like Times New Roman).</p>
+        <p style="font-family:sans-serif;"> 2- sans-serif: generic sans-serif fonts (like Arial or Helvetica).</p>
+        <p style="font-family:monospace;"> 3- monospace: generic monospaced fonts (like Courier New).</p>
+        <p style="font-family:cursive;"> 4- cursive: generic cursive fonts (for handwritten styles).</p>
+        <p style="font-family:fantasy;"> 5- fantasy: generic fantasy fonts (for decorative styles).</p>
+        <p> Tip: It is recommended to end the font family with any of these generic font family names.</p>
+        <h3>Examples :</h3>
+        <p class="font-family1">This is courier new taking effect.</p>
+        <p class="font-family2">This is verdana taking effect.</p>
+        <h3>Custom fonts/Google fonts :</h3>
+        <p>Google fonts are free, open-source fonts optimized for the web. They are easy to use and can be added to your website by adding a link to the Google Fonts API in your HTML document.Like i the one I inserted in the document's head section.</p>
+        <h3>Example of a custom font :</h3>
+        <p class="custom-font">This is a custom font(baloo bhai 2) taking effect.</p>
+    </div>
+</body>
+
+</html>

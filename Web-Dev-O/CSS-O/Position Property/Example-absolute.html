@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example of absolute positioning</title>
+
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0px;
+        }
+        .parent1{
+            background-color:chocolate;
+            margin: 5px;
+            margin-top: 20px;
+            border: 2px outset black;
+            width: 90vw;
+            height: 90vh;
+        }
+        .parent2{
+            background-color:chocolate;
+            margin: 5px;
+            margin-top: 20px;
+            border: 2px outset black;
+            width: 90vw;
+            height: 90vh;
+            position: relative;
+        }
+        .div{
+            height: 20vh;
+            width: 80vw;
+            border: 2px inset black;
+            margin: 5px;
+        }
+        .absolute1{
+            background-color: lightcoral;
+        
+        }
+        .absolute2{
+            background-color: green; 
+        }
+        .rl{
+            position: absolute;
+            top: 0px;
+            margin: 0px;
+        }
+        .rl-parent{
+            position: absolute;
+            top: 0px; 
+            margin: 10px; 
+        }  
+        .absolute3{
+            background-color: pink;
+        }
+        .absolute4{
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent1">
+        <div class="div absolute1"></div>
+        <div class="div absolute2 rl"></div>
+        <div class="div absolute3"></div>
+        <div class="div absolute4"></div>
+    </div>
+    <div class="parent2">
+        <div class="div absolute1"></div>
+        <div class="div absolute2 rl-parent"></div>
+        <div class="div absolute3"></div>
+        <div class="div absolute4"></div>
+    </div>
+</body>
+
+</html>

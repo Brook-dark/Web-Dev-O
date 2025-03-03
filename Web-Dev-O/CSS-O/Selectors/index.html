@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors In CSS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>List of selector types:</h1>
+    <ol type="i">
+        <li>Universal Selectors</li>
+        <li>Element Selectors</li>
+        <li>ID Selectors</li>
+        <li>Class Selectors</li>
+        <li>Group Selectors</li>
+        <li>Pseudo Selectors</li>
+    </ol>
+
+    <h1>Universal Selectors :</h1>
+    <p>
+        Universal selector is a type of selector that targets all the elements in the code meaning that any property
+        applied to it will take effect on all the elements present in the code, see its syntax in the style.css file !
+    </p>
+
+    <h1>Element Selectors :</h1>
+    <p>
+        Element selector is a type of selector in which we style only a specific selector rather than the whole html
+        webpage like we did in universal selector, properties can be applied to it using the respected element name as i
+        am going to apply a background color 'aquamarine' to 'h1' so that every h1 tag in this html file will be
+        affected by this and no other tag except h1 will get affected !
+    </p>
+
+    <h1 id="id_selector">ID Selectors :</h1>
+    <p>
+        An ID selector is unique selector that specifies css effects to a specific html element associated with the
+        respected ID only.Also one ID can only be used for one tag more than one tags cant have same ID, due to the ID
+        selector this H1's background color will differ from the rest despite the element selector's properties.
+    </p>
+
+    <h1>Class Selectors :</h1>
+    <p class="class_selector">
+        Class selector is just like ID selector but it can be used to target multiple specifc elements rather than just
+        a single element like in ID selector.
+    </p>
+    <p class="class_selector">
+        Like I am going to assign these two paragraph's font color to . so you can notice that only the font color of
+        these two paragraphs has changed and the color of rest of the &lt;p&gt; tags are not changed.
+    </p>
+
+    <h1>Group Selector :</h1>
+    <p>
+        A group selector works like class selector but it doesnot specify a element and outcast it interms of properties
+        from others but using this we can save alot of time.I will use a anchor and &lt;q&gt; tag for demonstration.
+    </p>
+    <div>An apple.</div>
+    <div><q>When nothing change, nothing changes.</q></div>
+
+    <h1>Pseudo classes</h1>
+    <p>
+        Definition: CSS rules that target an element based on its state or condition.
+        Explanation: Imagine you have a button. A pseudo-class allows you to apply specific styles to that button only
+        when certain conditions are met. For example, the :hover pseudo-class applies styles when the mouse hovers over
+        the button, making it appear different to the user. I will use different elements for demonstration of different tyoe of
+        pseudo-classes.
+    </p>
+    <a href="https://www.youtube.com/watch?v=Nrsy_2ogRfQ">Click here to learn more about pseudo-classes</a>
+    <ul>
+        <li>pseudo-classes</li>
+        <li>pseudo-classes</li>
+    </ul>
+    <div id="greeting">Hover here
+        <p>Holaaaaa</p>
+    </div>
+</body>
+
+</html>

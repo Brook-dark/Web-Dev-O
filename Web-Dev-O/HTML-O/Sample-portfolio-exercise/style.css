@@ -1,0 +1,55 @@
+td{
+    border : 2px solid white;
+    color:chartreuse
+}
+th{
+    border : 2px solid white;
+    color:darkseagreen
+}
+table {
+    margin: auto; /* Centers the table horizontally */
+    border-collapse: collapse; /* Optional: Remove space between cells */
+    border: 1px solid black; /* Optional: Add a border */
+    width: 50%; /* Optional: Set a width for the table */
+}
+.main_heading{
+    color:crimson;
+}
+
+body{
+    background-color: black;
+}
+ol,ul{
+    color:aqua;
+}
+ol ::marker,ul ::marker{
+    color:azure;
+}
+ul,ol{
+    text-align: center;
+    list-style-position: inside;
+}
+p{
+    color:beige;
+    text-align: center;
+}
+form{
+    text-align: center;
+}
+label{
+    color:beige
+}
+h1{
+    color:blueviolet;
+    text-align:center;
+}
+h2{
+    text-align: center;
+    color:yellow;
+}
+h3{
+    text-align: center;
+    color:magenta;
+}
+
+

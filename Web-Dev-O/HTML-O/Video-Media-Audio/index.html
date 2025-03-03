@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video-Audio-Media</title>
+</head>
+
+<body>
+    <!--video can be integrated on a webpage by using video tag with various attributes,src attribute is must-->
+    <video src="c:\Users\ABC\Videos\One's Videos\MONTAGEM_ALUCINANTE_CRITICAL_-_DJ_PAPAGAIO___SLOWED_(480p).mp4"
+        width="755" height="255" controls></video>
+
+    <div>
+        <!--Audio can be integratd on a webpage by using audio tag with various attributes, src attribute is must-->
+        <audio src="c:\Users\ABC\Music\Noizy_-_Follow_You_-__slowed___reverb_(128k).mp3" controls></audio>
+    </div>
+
+    <div>
+        <!--Iframes: Iframes can be used to integrate any external content to a webpage,using a iframe is very easy just copy and paste the link-->
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/aqz-KE-bpKQ" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+        </iframe>
+        <!--before using a ifram check if the video or the content is available in your region otherwise it wont work-->
+    </div>
+
+    <div>
+        <!--svg: svgs are basically images but they use vector grphics rather then pixels used by raster images (png and jpg) means when zoomed in raster images you will see pixels but in svgs no matter how much you zoom the image stays clear, they are high quality images basically-->
+        <!--Svgs can be programmed in two ways,
+         first is: writing the code itself-->
+        <svg height="100" width="100">
+            <circle cx="50" cy="50" r="50" stroke="black" stroke-width="3" fill="red" />
+            <!-- the cx attribute defines where your image should be horizontally if you increase the value then the image will move more to the right and vice versa, the cy attribute defines where your image should be vertically if you increase the value it will move more to the bottom and if you decrease it will move more to the top, r means radius which is basically he radius of he circle if you increase it then the size of circle will also increase the r attribute depends upon which type of shape u are using if it isnt a circle then r attribute wont be used!, the stroke attribute is the border line and stroke width defines how thick the border should be and fill just fills a color in entire shape  -->
+        </svg>
+        <!-- second is: using img tag-->
+        <img src="img.svg" alt="sample image">
+    </div>
+
+</body>
+
+</html>

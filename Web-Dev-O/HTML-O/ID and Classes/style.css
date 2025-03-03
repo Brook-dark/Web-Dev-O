@@ -1,0 +1,7 @@
+.brown-cat{
+    color :black;
+} /* to specify that you are applying a css property to a class you need to write the class name preceded by a (.)*/
+
+#first-id{
+    background-color :rgb(216, 210, 38);
+}/* to specify that you are applying a css property to an id you need to write the id name preceded by a (#)*/

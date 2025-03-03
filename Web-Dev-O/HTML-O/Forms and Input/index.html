@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One's Forms</title>
+</head>
+
+<body>
+    <h1>Fill this form to enter this webpage:</h1>
+    <form action="/submit.php" method="post">
+        <!--the action attribute specifies the URL where the form data will be submitted. The method attribute specifies the HTTP method to be used when submitting the form data.The HTTP method can be GET or POST if tou retrieve data from the server then it will be get method and if you send data to the server then it will be post method-->
+        <div>
+            <label for="username">Username :</label><!--The <label> element uses the for attribute to reference that identifier. And e id attribute gives the form field a unique identifier.-->
+            <input type="text" id="username" name="username"
+                placeholder="Enter your username(required)"><!--The name attribute is essential for identifying form data and referencing form fields in JavaScript. And the placeholder attribute is used to provide a hint to the user what to enter in the input field-->
+        </div>
+
+        <div>
+            <label for = "password">Password :</label>
+            <input type = "password" id = "password" name = "password" placeholder = "Enter your accounts password(required)">
+        </div>
+
+        <div>
+            <label for="male">Male</label>
+            <input type="radio" id="male" name="user's gender" value="male">
+            <!--The value attribute is used to specify the value of the form field like that value is sent to the server-->
+            <label for=" female">Female</label>
+            <!-- we used two different labels for different radio buttons as each radio button has its own value-->
+            <input type="radio" id="female" name="user's gender" value="female">
+        </div>
+
+        <div>
+            <label for = "Be kind">Be kind</label> <!-- the position of check box or radio button can be left or right depending on the position of the label(before or after)-->
+            <input type = "checkbox" id = "Be kind" name = "persona" value = "is kind">
+        </div>
+
+        <div>
+            <label for = "about yourself">Tell us about yourself :</label>
+            <br>
+             <textarea type = "comment" id = "about yourself" name = "users about" rows = "4"cols = "50" placeholder = "write something about yourself...."></textarea> <!--we used textarea for long text because  input can only take short text(one line only)-->
+        </div>
+
+        <div>
+            <label for = "anime">Choose your fav anime :</label>
+            <select  id = "anime" name = "anime">
+                <option value = "Onepiece">Onepiece</option>
+                <option value = "Vinland saga">Vinland saga</option>
+                <option value = "Berserk">Berserk</option>
+            </select>
+        </div>
+
+        <div>
+            <label for = "submit">Submit the form :</label>
+            <input type = "submit" id = "submit" name = "submit" value = "Submit"
+        </div>
+    </form>
+    <h1> More input types ! </h1>
+    <img src = "1_u0zSpc0ILeMSJ_4OO25nPg.jpg">
+</body>
+
+</html>

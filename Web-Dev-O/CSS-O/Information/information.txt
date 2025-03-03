@@ -1,0 +1,27 @@
+=====What is CSS?
+CSS stands for Cascading Style Sheets. It is a stylesheet language that is used to describe the visual presentation of a web page written in HTML (Hypertext Markup Language).
+=====Why the word "cascade"?
+The term "cascade" refers to the priority scheme determining which CSS rules are applied when multiple rules target an element. This scheme takes into account specificity and inheritance, ensuring that the most specific and latest rules are applied.
+=====Why use CSS?
+CSS is used to provide styling to HTML elements, making web pages visually appealing and user-friendly.
+=====How CSS Works?
+Go to : https://www.codewithharry.com/tutorial/how-css-works/
+=====Syntax of CSS:
+CSS follows a rule-based structure. Each rule consists of a selector and a declaration block. Selectors pick the HTML elements, while declaration blocks contain pairs of properties and values.
+----The general syntax for writing CSS.
+selector {
+    property: value;
+}
+=====Ways to add CSS:
+There are three different ways to add CSS to an HTML page, which are:
+1-Inline CSS
+2-Internal CSS
+3-External CSS
+-----Inline CSS:
+Inline CSS is used to add custom properties to specific elements. The added style will only reflect on that particular element only.
+To use inline CSS, Insert the "style" attribute within the HTML element's opening tag.(not recommended nowadays)
+-----Internal CSS:
+Internal CSS is used to apply custom style to the multiple elements on the same page. The style can be used throughout the HTML page.
+Internal CSS is defined in a style block, which will be inside the head section.(you can use this when very small amount of styling is requires although its not preferred)
+=====External CSS:
+External CSS works similarly to internal CSS but with a twist. Instead of adding the styles within the HTML file, we create a separate file with .css extension. This file will hold all the styling details. Then, we link this file to the HTML page, giving it the instructions on how to look. 

@@ -1,0 +1,46 @@
+/* 1) Universal Selector : */
+/* you can see that the whole html code is now center align with the textual color being aqua as we styled here */
+/*
+* {
+    text-align: center; 
+    color:aqua;
+} 
+*/ 
+
+/* 2) Element selector : */
+h1{
+    background-color:aquamarine;
+}
+
+/* 3) ID Selector : */
+#id_selector{
+    background-color: chocolate;
+}
+ 
+/* 4) Class Selector : */
+.class_selector{
+    color:chartreuse;
+}
+
+/* 5) Group selector */
+div,q{
+    color:darkmagenta;
+}
+
+/* 6) Pseudo classes */
+li:hover{
+    background-color: hotpink;
+}
+a:active{
+    background-color:blueviolet;
+}
+a:visited{
+    color:crimson;
+}
+#greeting p{
+    background-color: chocolate;
+    display: none;
+}
+#greeting:hover p{
+    display:block;
+}

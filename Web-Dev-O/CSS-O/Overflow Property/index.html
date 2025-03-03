@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow Property</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="heading">Overflow Property</h1>
+    <div class="container">
+        <h2 class="heading">Explanation</h2>
+            <p>CSS over flow property is used in cases when the text or size of a container is too large than the width and height of the container that it overflows out of the container.Using this property we can handle overflowing of things inside a container.Overflow property has multiple key values which have different funtions.Here are some of the key values descriptively explained below. <br>Firstly the default value for overflow property is visible explained below:</p>
+                <h2 class="heading">1: Visible(default)</h2>
+                    <h3 class="heading">Explanation:</h3>
+                        <p>This property makes the whole text in the container visible irrespective of the size of the container meaning the text will overflow if its too large for the width and height of the container.</p>
+                            <h4 class="heading">Example:</h4>
+                                <p>Here the text in the div is two large for the width and height of the container to contain therefore it overflows and as the overflow property is set to visible therefore the overflow shows.</p>
+                                    <div id="cont-visible">
+                                        Now, utterly lacking any capacity to resist, I allowed myself to be borne along by the current, borne along passively like a dead leaf.  I had completely lost confidence in my ability to control my own destiny.  The thought of resisting or struggling against the current seemed as ludicrous to me as trying to hold back a flood with my bare hands.  Yes, I was swept along, utterly powerless, a floating, rotting weed.  I no longer had any sense of my own will, my own personality.  I was nothing more than a leaf, driven by the wind, a scrap of refuse swept along by the current.  How could such a being, such a shadow, even dare to call itself human?
+                                    </div>
+    </div>
+
+    <div class="container">
+        <h2 class="heading">2: Hidden and clip</h2>
+            <h3 class="heading">Explanation(hidden):</h3>
+                <p>This value of overflow property makes the text hidden if it exceeds the width and height of the container.In this case the text will disappear and wont show.</p>
+                    <h4 class="heading">Example:</h4>
+                        <p>Here the text is too large for the container to contain but we used <code>overflow:hidden;</code>.So instead of flowing out the container the text will hide.</p>
+                            <div id="cont-hidden">
+                                Now, utterly lacking any capacity to resist, I allowed myself to be borne along by the current, borne along passively like a dead leaf.  I had completely lost confidence in my ability to control my own destiny.  The thought of resisting or struggling against the current seemed as ludicrous to me as trying to hold back a flood with my bare hands.  Yes, I was swept along, utterly powerless, a floating, rotting weed.  I no longer had any sense of my own will, my own personality.  I was nothing more than a leaf, driven by the wind, a scrap of refuse swept along by the current.  How could such a being, such a shadow, even dare to call itself human?
+                            </div>
+            <h3 class="heading">Explanation(clip):</h3>
+                            <p>The clip value is very similar to the hidden value the main <strong>difference</strong> is that the clip property even stops the scrolling if it is trying to happen programmatically(using javascript etc.)</p>
+    </div>
+
+    <div class="container">
+        <h2 class="heading">3: Scroll</h2>
+            <h3 class="heading">Explanation:</h3>
+                <p>If the text is overflowing then using this key value of overflow property we can use a horizontal and vertical scrollbar(depending upon the width and height of the text) by which we can see the text by scrolling without it overflowing out of the container or being hidden.</p>
+                    <h4 class="heading">Example:</h4>
+                        <p>Here the text is vertically more overflowing so a vertical scroll bar appears.</p>
+                            <div id="cont-scroll">
+                                Now, utterly lacking any capacity to resist, I allowed myself to be borne along by the current, borne along passively like a dead leaf.  I had completely lost confidence in my ability to control my own destiny.  The thought of resisting or struggling against the current seemed as ludicrous to me as trying to hold back a flood with my bare hands.  Yes, I was swept along, utterly powerless, a floating, rotting weed.  I no longer had any sense of my own will, my own personality.  I was nothing more than a leaf, driven by the wind, a scrap of refuse swept along by the current.  How could such a being, such a shadow, even dare to call itself human?
+                            </div>
+                    <h4 class="heading">Example 2:</h4>
+                        <p>Here the overflow property shows a horizontal scroll bar.I used <code>white-space:nowrap;</code>.Which makes the whole text appear in a single line without wrapping on a second line.So we need to use overflow scroll property to see it or else it will overflow outside the container.</p>
+                             <div id="cont-scroll2">
+                                    Now, utterly lacking any capacity to resist, I allowed myself to be borne along by the current, borne along passively like a dead leaf.  I had completely lost confidence in my ability to control my own destiny.  The thought of resisting or struggling against the current seemed as ludicrous to me as trying to hold back a flood with my bare hands.  Yes, I was swept along, utterly powerless, a floating, rotting weed.  I no longer had any sense of my own will, my own personality.  I was nothing more than a leaf, driven by the wind, a scrap of refuse swept along by the current.  How could such a being, such a shadow, even dare to call itself human?
+                             </div>
+                    <h4 class="heading">Overflow-x:</h4>
+                        <p>This sets a horizontal scroll bar if the text is scrolling horizontally, you can also set other values on it as well like (visible,hidden,scroll and auto).</p>
+                    <h4 class="heading">Overflow-y:</h4>
+                             <p>This sets a vertical scroll bar if the text is scrolling horizontally, you can also set other values on it as well like (visible,hidden,scroll and auto).</p>
+                    <h4 class="heading">Additional info:</h4>
+                             <p>We can write them together as: <code>overflow: x y;</code>.Where x is the value for overflow-x and y is value for overflow-y.</p>
+            <h3 class="heading">Note:</h3>
+                             <p>If you use any scroll value then a scroll bar will appear regardless of the text overflowing.</p>
+    </div>
+
+    <div class="container">
+        <h2 class="heading">4: Auto</h2>
+            <h3 class="heading">Explanation:</h3>
+                <p>This value of the overflow property makes a scroll bar appear if the text is overflowing automatically if not then the scroll bar wont appear.This is the most user-friendly way.Following are two divs of different texts of different sizes, the one that overflows will be a assigned a scroll bar by 'auto' value of overflow property(It is used in both divs.)</p>
+                    <h4 class="heading">Example 1:</h4>
+                        <div id="cont-auto">
+                            Now, utterly lacking any capacity to resist, I allowed myself to be borne along by the current, borne along passively like a dead leaf.  I had completely lost confidence in my ability to control my own destiny.  The thought of resisting or struggling against the current seemed as ludicrous to me as trying to hold back a flood with my bare hands.  Yes, I was swept along, utterly powerless, a floating, rotting weed.  I no longer had any sense of my own will, my own personality.  I was nothing more than a leaf, driven by the wind, a scrap of refuse swept along by the current.  How could such a being, such a shadow, even dare to call itself human?
+                        </div>
+                    <h4 class="heading">Example 2:</h4>
+                        <div id="cont-auto">
+                            Now, utterly lacking any capacity to resist, I allowed myself to be borne along by the current, borne along passively like a dead leaf.  I had completely lost confidence in my ability to control my own destiny.  The thought of resisting or struggling against the current seemed as ludicrous to me as trying to hold back a flood with my bare hands.
+                        </div>
+    </div>
+
+    <div class="container">
+        <h2 class="heading">5: Text-overflow</h2>
+            <h3 class="heading">Explanation:</h3>
+                <p>The text-overflow property deals with the overflowing of text.It has 3 values.1: clip(default),2:string(A custom string can be shown where the text is trunicated[cut short].),3: ellipses(An ellipses character[...] is shown at the place where the text is trunicated[cut short or the point on which after that the text overflows].Use white-space nowrap while using it.Here is an example of ellipses as its the most used among these three:</p>
+                    <h4 class="heading">Example:</h4>
+                        <div id="cont-text-overflow">
+                            Now, utterly lacking any capacity to resist, I allowed myself to be borne along by the current, borne along passively like a dead leaf.  I had completely lost confidence in my ability to control my own destiny.  The thought of resisting or struggling against the current seemed as ludicrous to me as trying to hold back a flood with my bare hands.  Yes, I was swept along, utterly powerless, a floating, rotting weed.  I no longer had any sense of my own will, my own personality.  I was nothing more than a leaf, driven by the wind, a scrap of refuse swept along by the current.  How could such a being, such a shadow, even dare to call itself human?
+                        </div>
+    </div>
+</body>
+</html>

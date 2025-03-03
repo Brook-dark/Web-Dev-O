@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specificity In CSS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <h1>Specificity and cascade</h1>
+    <div class="container">
+        <h2>Specificity:</h2>
+        <p>Specificity determines which one of the css property will be applied to an element when there are multiple properties applied.Specificity is determined by cascade algorithm.</p>
+        <h2>Cascade Algorithm:</h2>
+        <p>CSS stands for cascading style sheets. The cascade is the algorithm which is used to solve conflicts in which multiple css rules are applied. It helps us to determine which one of the rule will take effect despite other rules.</p>
+        <h3>Algorithm :</h3>
+        <ul type="circle">
+            <li><strong>Position and order of appearance:</strong> the order in which your CSS rules appear</li>
+            <li><strong>Specificity:</strong> an algorithm that determines which CSS selector has the strongest match</li>
+            <li><strong>Origin:</strong> the order in which CSS appears and where it comes from, whether that is a browser style, CSS from a browser extension, or your authored CSS</li>
+            <li><strong>Importance:</strong>some CSS rules are weighted more heavily than others, especially with the !important rule type.</li>
+        </ul>
+    </div>
+    <div class="container">
+        <p>Lets look into all these one by one :</p>
+    </div>    
+    <div class="container">
+        <h2>Position and order of appearance:</h2>
+        <p>When two rules have the same specificity, the last one defined will take precedence. This is why it is important to define your CSS rules in the correct order.</p>
+        <h3>Example:</h3>
+        <p id="position">This is an example of how the order of appearance can affect the outcome of your CSS rule.I used three different color property values (red,orange,purple respectively) and the purple took effect as it was the last one.</p>
+        <p>This is applicable for every single property, the one which comes in last takes effect.</p>
+    </div>
+    <div class="container">
+        <h2>Specificity</h2>
+        <p>Each css rule has specific specificity.Simply said, each css rule has a specific number which makes it more specific than others and any style assigned to that property will override other elements with low specificity.Here is the list by rank:</p>
+        <ol type="1">
+            <li>Inline styles</li>
+            <li>ID</li>
+            <li>Class, pseudo-class, attribute</li>
+            <li>Element, pseudo-element</li>
+            <li>Universal selector</li>
+        </ol>
+        <p>Inline Style > ID Selector > Class or Attribute Selector > Element Selector > Universal Selector.</p>
+        <h3>Calculation of specificty :</h3>
+        <p>To calculate specificity, following are the values assigned to each part of the selector.</p>
+        <ul>
+            <li>Universal Selector: 0</li>
+            <li>Element selectors and pseudo-elements: 1</li>
+            <li>Class selectors, attribute selectors, and pseudo-classes: 10</li>
+            <li>ID selectors: 100</li>
+            <li>Inline styles: 1000</li>
+        </ul>
+        <p>Its important to calculate specificity when there are multiple classes,ids or other selectors applied to same element or container and we need to decide which one overrides which. Here is an example:</p>
+        <h3>Example:</h3>
+        <p id="class"class="class1 class2 class3"> lets say we have three classes assigned to this element, and when we use the class together with element selector then the specificity of that specific class will become 11 overridding other classes with specificity of 10, So the position wont matter here.</p>
+        <h3>Quiz :</h3>
+        <p>What will be the specificity value of the following selector:</p>
+        <code>
+            a.superclass.one-class[href]:hover {
+                color: red;
+              }
+        </code>
+        <p>Answer: 41</p>
+        <h4>Solution:</h4>
+        <ul>
+            <li>Element selector: 1</li>
+            <li>Class selector: 10</li>
+            <li>Class selector: 10</li>
+            <li>Attribute selector: 10</li>
+            <li>Pseudo-class: 10</li>
+        </ul>
+        <p>Add up all these values:
+           1 (element) + 20 (classes) + 10 (attribute) + 10 (pseudo-class) = 41.</p>
+    </div>
+    <div class="container">
+        <h2>Importance</h2>
+        <p>Some CSS rules are weighted more heavily than others, especially with the !important rule type. The !important rule will override all other styles, regardless of specificity. It is important to use !important sparingly, as it can make your CSS difficult to manage and maintain.</p>
+        <p>It has an specificity of 10000</p>
+    </div>
+    <div class="container">
+        <h2>Origin</h2>
+        <p>Origin is the order in which CSS appears and where it comes from, whether that is a browser style, CSS from a browser extension, or your authored CSS. The order of origin is as follows:</p>
+        <ul>
+            <li>Browser styles</li>
+            <li>Browser extensions</li>
+            <li>Author styles</li>
+            <li>!important</li>
+        </ul>
+        <p>Author styles will override browser styles, and !important will override all other styles.</p>
+    </div>
+</body>
+</html>

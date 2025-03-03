@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colors in css</title>
+
+    <style>
+       body{
+        background-color:gray;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+       }
+       h1,h2{
+        text-align: center;
+        font-weight: bold;
+        font-style: oblique;
+        background-color: beige;
+       }        
+       .container{
+        background-color: blanchedalmond;
+       }
+       #hex{
+        color: #F9C2C2; /* Here C is a hexadecimal value = 12, A = 10, B = 11, C = 12, D = 13, E = 14, F = 15*/
+       }
+       #rgb{
+        color:rgb(20,70,25)
+       }
+       #rgba{
+        color:rgba(20, 70, 25, 0.438)
+       }
+       #hsl{
+        color: hsl(300, 66%, 25%)
+       }
+       #hsla{
+        color: hsla(300, 66%, 25%, 0.616)
+       }
+    </style>
+
+</head>
+
+<body>
+    <h1>Colors in CSS :</h1>
+    <h2>Important properties and values related to colors :</h2>
+    <div>
+    <h2>Color property and its values :</h2>
+    <p style=" color:antiquewhite;">○- You can use color property normally as color: colorname; normally but there are many different type of values for color also, these are :</p>
+    </div>
+
+    <div class="container">
+        <h3>○ Hex notation :</h3>
+        <p>The hex code consists of a hash(#) symbol followed by six characters. These six characters are arranged into a set of three pairs (RR, GG, and BB).
+            Each character pair defines the intensity level of the colour, where R stands for red, G stands for green, and B stands for blue.
+            The intensity value lies between 00 (no intensity) and ff (maximum intensity).
+            Breaking the Character Set (RRGGBB):
+           <p>
+            <ul>
+                <li>RR: RR defines the intensity of color red, ranging from 00 (no red) to FF (maximum red).</li>
+                <li>GG: GG defines the intensity of color Green, with values from 00 (no green) to FF (full green).</li>
+                <li>BB: GG defines the intensity of color Blue, varying from 00 (no blue) to FF (full blue).</li>
+            </ul>
+          </p>  
+        </p>
+        <h3>Example :</h3>
+        <p id="hex">This is a color assigned using hex notation.</p>      
+    </div>
+    
+    <div class="container">
+        <h3>○ rgb and rgba :</h3>
+        <p>RGB stands for Red, Green, and Blue. It is a color model that defines the intensity of red, green, and blue colors in a color. 
+            The intensity value lies between 0 to 255. The RGB color model is an additive color model in which red, green, and blue light are added together in various ways to reproduce a broad array of colors.
+            The RGB color model is based on the three primary colors of light: red, green, and blue. These three colors are combined in various ways to produce other colors.</p>
+        <p>RGBA is just like rgb but with a additional alpha value which defines the opacity of the color.</p>
+        <h3>Example of rgb:</h3>
+        <p id="rgb">This is a rgb color.</p>
+        <h3>Example of rgba:</h3>
+        <p id="rgba">This is a rgba color.</p>
+    </div>
+     
+    <div class="container">
+        <h3>○ hsl and hsla :</h3>
+        <p>HSL stands for Hue, Saturation, and Lightness. It is a color model that defines the intensity of hue, saturation, and lightness in a color. 
+            The intensity value lies between 0 to 360 for hue, 0% to 100% for saturation and lightness.
+            The HSL color model is based on the three primary colors of light: hue, saturation, and lightness. These three colors are combined in various ways to produce other colors.</p>
+        <p>HSLA is just like hsl but with a additional alpha value which defines the opacity of the color.</p>
+        <h3>Example of hsl:</h3>
+        <p id="hsl">This is an example of hsl color.</p>
+        <h3>Example of hsla:</h3>
+        <p id="hsla">This is an example of hsla color.</p>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List styling</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="heading">List-Styling</h1>
+            <h2 class="heading">Explanation:</h2>
+                <p>We can style lists using various css list properties.Some of the most used properties are explained below.We can also use a single list-style property to assign multiple properties such as type,positon,image etc.</p>
+    </div>
+
+    <div class="container">
+        <h2 class="heading">Un-ordered list styling:</h2>
+            <h3 class="heading">Explanation:</h3>
+                <p>We can style unordered list's markers using <code>list-style-type: value;</code> .The values can be: <strong>disc(default):</strong>A filled circle marker.<strong>circle:</strong>Hollow circle marker.<strong>square:</strong>A filled square marker.<strong>none:</strong>Removes the marker.</p>
+            <h3 class="heading">Example:</h3>
+                <ul>
+                    <li>Here is an example of a list item whose marker is modified to square usng the list-style property.</li>
+                    <li>Here is another example of a list item whose marker is modified to square usng the list-style property.</li>
+                </ul>
+    </div>
+
+    <div class="container">
+        <h2 class="heading">Ordered list styling:</h2>
+            <h3 class="heading">Explanation:</h3>
+                <p>We can also style markers of ordered lists using the <code>list-style-type: value;</code>The values can be: <strong>decimal(default):</strong>Decimal numbers [1,2,3...etc].<strong>decimal-leading-zero:</strong>Decimal numbers starting with '0'[01,02,03...etc].<strong>Lower-roman:</strong>Lower-case roman letters [i,ii,ii...etc].<strong>Upper-roman:</strong>Upper-case roman letter [I,II,II....etc].<strong>Lower-alpha:</strong>lower-case alphabetical letters [a,b,c...etc].<strong>Upper-alpha:</strong>Upper-case alphabetical letters [A,B,C....etc].</p>
+            <h3 class="heading">Example:</h3>
+                <ol>
+                    <li>Here is an example of a list item whose marker is modified to lower case roman.</li>
+                    <li>Here is another example of a list item whose marker is modified to lower case roman.</li>
+                </ol>
+    </div>
+
+    <div class="container">
+        <h2 class="heading">List's position styling:</h2>
+            <h3 class="heading">Explanation:</h3>
+                <p>The list-style-position property determines where the markers[bullets or numbers] position will be.It has 2 values: <strong>inside:</strong>It displays the list marker inside the content box means any property applied to the content will also take effect upon it. <strong>outside(default):</strong>It displays the list marker outside the content box means any property applied to the content will not take effect upon it.</p>
+            <h3 class="heading">Example:</h3>
+                <ol>
+                    <li class="list-positioning1">This is an example of list-positioning(inside).</li>
+                    <li class="list-positioning2">This is an example of list-positioning(ouside).</li>
+                </ol>
+    </div>
+    
+    <div class="container">
+        <h2 class="heading">List style 'none':</h2>
+            <h3 class="heading">Explanation:</h3>
+                <p>As the name says it is used to remove any default styles applied to lists.</p>
+            <h3 class="heading">Example:</h3>
+                <ul class="none">
+                    <li>hello</li>
+                    <li>hello</li>
+                </ul>
+    </div>
+
+    <div class="container">
+        <h2 class="heading">Custom list style:</h2>
+            <h3 class="heading">Explanation:</h3>
+                <p>You can add emoji in list-style-type and use an emoji as a marker.Its the done the same way you enter values for modifying markers but use quotation mark like: "emoji".</p>
+            <h3 class="heading">Example:</h3>
+                <ul id="emoji"><li>here a fire emoji is used as a marker</li></ul>
+    </div>
+
+    <div class="container">
+        <h2 class="heading">list-style-image.</h2>
+            <h3 class="heading">Explanation:</h3>
+                <p>You can also use images and gifs as markers in list-style-type with the syntax: <code>list-style-type: url("url of image")</code></p>
+    </div>
+</body>
+</html>

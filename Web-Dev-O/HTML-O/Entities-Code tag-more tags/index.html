@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Miscellaneous Tags</title>
+</head>
+
+<body>
+  <div>
+    <h1>HTML Entities:</h1>
+    <!--HTML entities are specific symbols that represent things reserved in html on website or things normally you cant show on a website, some of them are shown below -->
+    <p>This is 5 &lt; 10</p> <!-- Displays: This is 5 < 10 -->
+    <!-- &lt; represents < and &gt; represents > you need to replace all <> signs with these to show the code using "<code>" tag(discussed later) on website-->
+    <p>&copy; 2025 Your Name</p> <!-- Displays: © 2025 Your Name -->
+    <p>Smile emoji: &#128515;</p> <!-- Displays: Smile emoji: 😃 -->
+    <!-- you can see more entity tags in the other .txt file in this folder-->
+  </div>
+
+  <div>
+    <h1>HTML Code and Pre tag:</h1>
+    <h2>Code tag:</h2>
+    <!--HTML code tag is a tag that you have to use if you want to show a small code snippet on your website as it tells the browser that following is a code snippet but you still need to use entities !-->
+    <code>
+        &lt;h1&gt;Hello World&lt;/h1&gt;
+      </code>
+    <h2>Preformatted tag:</h2>
+    <!-- pre tag preserves your text as it is means just as you write in this tag it shows it exactly in the browser-->
+    <pre>
+        haha hahahah meowww
+      </pre>
+    <h2>Code and Pre tag combined:</h2>
+    <!-- you can use code tag inside pre tag for longer code snippets and it is also preferred this way-->
+    <pre>
+        <code>
+        def say_hello():
+            print("Hello, World!")
+        </code>
+      </pre>
+  </div>
+
+  <div>
+    <h1>HTML canvas:</h1>
+    <!--canvas is a container tag used to create graphical stuff using css and javascript-->
+    <canvas id="myCanvas" width="400" height="300"></canvas>
+  </div>
+
+  <div>
+    <h1>Blockquote and q tag:</h1>
+    <h2>Blockquote:</h2>
+    <!--Blockquote tag is used to show a quote and also tell the browser that following tag is a quote but it does not show quotation marks-->
+    <blockquote cite="https://example.com/speech"> <!-- the cite attribute is used to refer the site from which the quote is taken from-->
+      The only limit to our realization of tomorrow is our doubts of today.
+    </blockquote>
+    <h2>'q' tag:</h2>
+    <!--The q tag is just like blockquote tag but the main difference is that it is used for shorter quoates and also it shows quotation marks-->
+    <q cite="https://example.com/speech"> <!-- the cite attribute is used here same as blockquote tag-->
+      The only limit to our realization of tomorrow is our doubts of today.
+    </q>
+  </div>
+
+  <div>
+    <h1>Character sets and meta tags:</h1>
+    <h2>Character sets:</h2>
+    <p>
+      A character set maps numbers to characters so computers can display text properly. Modern webpages use UTF-8, which supports all languages, symbols, and emojis. It’s efficient and widely adopted.These are attributes used inside meta tags !
+    </p>
+    <h2>Meta tags</h2>
+    <p>
+      Meta tags provide metadata (information about the webpage) to browsers and search engines. They are placed inside the &lt;head&gt; of an HTML document and do not appear on the page itself.
+    </p>
+  </div>
+
+</body>
+
+</html>

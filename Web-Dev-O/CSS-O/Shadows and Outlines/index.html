@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadows and Outlines</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Shadows and Outlines</h1>
+    <div class="container">
+        <h2>Box shadow</h2>
+            <h3>Explanation:</h3>
+                <p>Box shadow is a property that allows you to add a shadow effect to an element. Its syntax is like : <code>box-shadow: h-offset v-offset blur spread color inset;</code> here: <strong>h-offset:</strong>Defines shadow's horizontal position.<strong>v-offset:</strong>Defines shadow's vertical position<strong>blur:</strong>Blurs the shadow.The larger the value higher the blur.<strong>spread:</strong>Expands or shrinks the shadow size<strong>color:</strong>Defines the color for the shadow.<strong>inset/offset:</strong>It makes shadow inner or outer.</p>
+            <h3>Best practice:</h3>
+                <p>Best practice is to use the browsers in built toolkit to select the shadow or modifying it, it will make the process much easier and you'll be able to select the best shadow for your needs.To understand how to use them you can watch this <a href="https://youtu.be/BZJcNU648Tc?si=DPIHtv7LJxSUdaoa" target="_blank">video</a>.</p>
+            <h3>Example of box-shadow:</h3>
+                <p>You can see that theres a pinkish shadow in this div, thats because of the box-shadow property.You can see the code from the browsers web tools or simply by inspecting.</p>
+    </div>
+
+    <div class="container ts">
+        <h2>Text-shadow:</h2>
+            <h3>Explanation:</h3>
+                <p>Its just like box-shadow but the difference is that it applies to text instead of the container.It works the same as box-shadow, same syntax.You just need to change the name to text-shadow from box-shadow.You can also use web toolkit for making a appealing text-shadow.</p>
+            <h3>Example:</h3>
+                <p>Look i applied a text-shadow to this paragraph.</p>
+    </div>
+
+    <div class="container">
+        <h2>Outline:</h2>
+            <h3>Explanation:</h3>
+                <p>An outline is a line that is drawn around elements, outside the borders, to make the element "stand out". It's commonly used for accessibility purposes, like highlighting focused elements.The syntax of outline is same as the border.It even looks quite same but they both have some differences.</p>
+            <h3>Difference between border and outline:</h3>
+                <table>
+                    <tr>
+                        <th>Outline</th>
+                        <th>Border</th>
+                    </tr>
+                    <tr>
+                        <td>
+                        <ol type="1">
+                            <li>It does not take up space in the layout.</li>
+                            <li>It does not affect the total dimensions of the element. Adding an outline will not change the element's width or height.</li>
+                            <li>It's positioned outside the element's border edge.</li>
+                            <li>It is not fixed like border you can make it appear far or very close to the content using {outline-offset} property.</li>
+                        </ol>
+                        </td>
+                        <td>
+                            <ol type="1">
+                                <li>It takes up space around the element's content and padding.</li>
+                                <li>It affects the total dimensions of the element. Adding a border will increase the overall width and height of the element (unless you use box-sizing: border-box;).</li>
+                                <li>It's positioned inside the element's outer edge.</li>
+                                <li>It has a fixed position after the padding and cannot be moved further or close.</li>
+                            </ol>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>Usecases:</strong>Use outline for temporary, non-layout-altering visual highlighting, primarily for focus states and accessibility.</td>
+                        <td><strong>Usecases:</strong>Use border for structural and decorative element boundaries that are a permanent part of the design and layout.</td>
+                    </tr>
+                 </table>
+            <h3>Example:</h3>
+                <p id="outline">Look i applied an outline to this para.</p>
+                <p id="outlineoffset">Look i applied out line offset property to this paragraph.</p>      
+    </div>
+</body>
+</html>

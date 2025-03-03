@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sizing units in css</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Sizing units in css</h1>
+
+    <div class="container">
+        <h2>Size in pixels</h2>
+        <h3>Explanation:</h3>
+        <p>px (pixels) is an absolute unit of measurement in CSS. It represents a fixed number of physical pixels on thescreen. One pixel is typically the smallest visual unit on a display. However, the actual physical size of a pixel can vary depending on the screen's resolution (DPI/PPI).
+        </p>
+        <h3>Example:</h3>
+        <p>Suppose i want the font style of this paragraph to be 25px then i can do that using font-size:25px.You can see its effects right now as the font size is now 25px</p>
+    </div>
+
+    <div class="container container2">
+        <h2>Size in vh and vw</h2>
+        <h3>Explanation:</h3>
+        <p>vh (viewport height) and vw (viewport width) are relative units of measurement in CSS. They represent a percentage of the viewport's height and width, respectively. The viewport is the visible area of a web page, which may vary depending on the device's screen size and orientation.</p>
+        <p>The <code>vh</code> and <code>vw</code> units adjust the height and width of elements relative to the viewport size. This means that the dimensions of elements using these units will automatically scale based on the size of the device's screen. Unlike <code>px</code>, which is a fixed unit, <code>vh</code> and <code>vw</code> provide a more responsive design, ensuring that elements look consistent across different devices and screen sizes.</p>
+        <h3>Example:</h3>
+        <p>Suppose i want the height of this paragraph to be 20% of the viewport height then i can do that using height:20vh.You can see its effects right now as the height of this paragraph is now 20% of the viewport height</p>
+    </div>
+
+    <div class="container container3">
+        <h2>Size in em and rem</h2>
+        <h3>Explanation:</h3>
+        <h4>○ em:</h4>
+        <p>The em (em) unit is a relative unit of measurement in CSS. It represents a percentage of the font size of the parent element.Simply said it is used to multiply the font size of the parent element by a number assigned by you increasing the font size of the child element by that number.The default font size of the parent element is 16px,So if i use em:2 then the font size of the child element will be 32px.Which is 2 times the font size of the parent element(2x16=32).</p>
+        <h4>○ rem:</h4>
+        <p>The rem (rem) unit is relative unit if measurements in CSS.It represents a percentage of the font size of the root elements(html,head,body).The default font size of the root element is 16px,So if i use rem:2 then the font size of the child element will be 32px.Which is 2 times the font size of the root element(2x16=32).</p>
+        <h3>Note:</h3>
+        <p>If there is no root element then <code>rem</code> will be same as <code>em</code>.Lets say that you have assigned 12px to a root element and used <code>2em</code> inside the root element without assigning any font size to the child element then the font size of the child element will be <code>24px</code>.Which is 2 times the font size of the root element(2x12=24) because the font size of root element will be inherited to rest of the elements.</p>
+    </div>
+
+    <div class="container container4">
+       <h2>vmin and vmax</h2>
+       <h3>Explanation</h3>
+         <h4>○ vmin:</h4>
+            <p>The vmin (vmin) unit is a relative unit of measurement in CSS. It represents the smaller of the viewport's height and width. The vmin unit is useful for creating elements that scale based on the smaller dimension of the viewport, ensuring that they fit within the visible area of the screen regardless of its orientation or aspect ratio.</p>
+        <h4>Example:</h4>
+          <p>Here is a example of vmin taking effect, which is going to assign the width of this paragraph to 50 percent of whichever is the smaller dimension of the viewport.</p>
+        <h4>○ vmax:</h4>
+            <p>The vmax (vmax) unit is a relative unit of measurement in CSS. It represents the larger of the viewport's height and width.</p>
+            <p><strong>Usecase:</strong> Imagine you want a background image or a container to always cover at least one full viewport dimension, and you want it to be based on whichever dimension is larger. vmax is ideal for this.</p>
+        <h4>Example:</h4>
+            <p>Here is a example of vmax taking effect, which is going to assign the width of this paragraph to 50 percent of whichever is the larger dimension of the viewport.</p>
+    </div>
+
+    <div class="container">
+       <h2>Percentage</h2>
+       <h3>Explanation:</h3>
+       <p>Percentage unit in css is just like em and rem but the main difference is that while rem and em are only applicable for font, percentage unit is applicable to other sizing properties.</p>
+    </div>
+</body>
+
+</html>

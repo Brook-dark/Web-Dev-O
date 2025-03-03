@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text properties</title>
+
+    <style>
+        body{
+            background-color: aquamarine;
+            padding: 10px;
+        }
+        h1,h2{
+            text-align: center;
+            font-weight:bold;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: beige;
+            font-style: italic;
+        }
+        .container{
+            background-color:blanchedalmond;
+        }
+        #text-decoration1{
+            text-decoration: darkgreen underline;
+        }
+        #text-decoration2{
+            text-decoration: red overline;
+        }
+        #text-decoration3{
+            text-decoration: blue line-through;
+        }
+        #text-alignment1{
+            text-align: right;
+        }
+        #text-alignment2{
+            text-align: left;
+        }
+        #text-alignment3{
+            text-align: center;
+        }
+       #text-alignment4{
+            text-align: justify;
+       }
+       #text-transform1{
+           text-transform: uppercase;
+       }
+       #text-transform2{
+              text-transform: lowercase;
+       }
+       #text-transform3{
+             text-transform: capitalize;
+       }
+       #heading{
+        text-align: left;
+       }
+       #line-height{
+        line-height: 3.5;
+       }
+       #letter-spacing{
+        letter-spacing: 4px;
+       }
+    </style>
+
+</head>
+
+<body>
+     <h1>Text in CSS</h1>
+     <h2>Important font properties :</h2>
+     <div class="container">
+      <h3>○ Text decoration :</h3>
+      <p>The text decoration property is used to decorate text.There are 4 types of text decorations as :</p>
+      <h4>types of text decorations :</h4>
+      <p>Underline: It is used to insert a line below the text.</p>
+      <p>Overline: It is used to insert a line above the text.</p>
+      <p>Line-through: It is used to insert a line on the text.</p>
+      <p>None: It is used to remove all text decorations.</p>
+      <h3>Examples :</h3>
+      <p id="text-decoration1">This is an example of underline text decoration.</p>
+      <p id="text-decoration2">This is an example of overline text decoration.</p>
+      <p id="text-decoration3">This is an example of line-through text decoration.</p>
+     </div>
+
+     <div class="container">
+        <h3>○ Text alignment :</h3>
+        <p>The text align property is used to align text in a container such as div etc. It is important to use a container while using this property because without a specific block to align the text the property is useless.</p>
+        <h4>Values for text-alignment :</h4>
+        <p>Right: It is used to align the text to the right side.</p>
+        <p>Left: It is used to align the text to the left side.</p>
+        <p>Center: It is used to center the text.</p>
+        <p>Justify: It is used to spread the text evenly between the left and right margins.</p>
+        <h3>Examples :</h3>
+        <p id="text-alignment1">This text is aligned to the right.</p>
+        <p id="text-alignment2">This text is aligned to the left.</p>
+        <p id="text-alignment3">This text is aligned to the center.</p>
+        <p id="text-alignment4">This text is spread evenly between the left and right margins.</p>
+     </div>
+
+     <div class="container">
+        <h3>○ Text transform :</h3>
+        <p>This property is used to transform the text to different cases.There are 4 values for text transform property.</p>
+        <h4>Values for text-transform :</h4>
+        <p>Uppercase: Transforms all letters of the text to capital letters.</p>
+        <p>lowercase: Transforms all letters of the text to small letters.</p>
+        <p>Capitalize: Transforms first letter of every word of the text to capital letter.</p>
+        <p>None: Removes any text transformation.</p>
+        <h3>Examples :</h3>
+        <p id="text-transform1">The text has been transformed to uppercase.</p>
+        <p id="text-transform2">THE TEXT HAS BEEN TRANSFORMED TO LOWERCASE.</p>
+        <p id="text-transform3">The text first letter of the text has been capitalized.</p>
+     </div>
+
+     <div class="container">
+        <h2 id="heading">Line-height and letter-spacing :</h2>
+        <h3>○ Line-height :</h3>
+        <p>Line height property is used to control the space between two lines of text.If you think we can space two different texts using margins but using margins for spacing has a problem.If you use margins for this purpose than the space you assigned will always remain fixed no matter what device screen size is or what the user's zoom settings of browser is and this may lead to inconveniences like the text appearing in inconsistent manner etc but this is not the case for line-height as it auto adjusts it for the device or specific zoom settings.</p>
+        <h3>Example :</h3>
+        <p>This is text 1.</p>
+        <p id="line-height">This is text 2.</p>
+        <h3>○ letter-spacing :</h3>
+        <p>Letter spacing property is used to control the space between two letters of text.Letter spacing property can take values in px, rem,and percentages.</p>
+        <h3>Example :</h3>
+        <p id="letter-spacing">This is an example of letter spacing.</p>
+     </div>
+</body>
+
+</html>

@@ -1,0 +1,11 @@
+body{
+   background-color: bisque;
+}
+div :first-child{
+    background-color: yellow;
+    color: red;
+}
+div p{ /*p is a decendent selector*/
+    background-color: blue;
+    color: white;
+}

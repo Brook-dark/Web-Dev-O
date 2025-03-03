@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!--The CSS box model includes four things as : 
+    1)Main content 
+    2)Padding
+    3)Border
+    4)Margin.
+    We will dive into them one my one then collectively see how a box model operates. -->
+    <h1>Content :</h1>
+    <!--This is the main content of the box model-->
+    <p class="box">This is some content</p>
+    <h1>Padding :</h1>
+    <!--Padding is used to create a  invisible space between the border and the content, all the properties applied to the content take effect in the padding area and vice verse, padding has 4 sides with same pixels px, you can see that exact using inspect feature of the browser.You can easily see that the background color of the content has now acquiring more space than it did in content section above thats due the the padding we did which increased the distance of content from the border.-->
+    <p class="box padding">This is padding taking effect on content.</p>
+
+    <h1>Border :</h1>
+    <!--You can guess by the name that border is the border that comes after the padding and after the border the background color of the content cannot exceed you can also assign width, color etc to the borders, we can also apply different border styles using different properties,additional styles will be presented in the additional.txt file !-->
+    <p class="box border">This is border of a box model.</p>
+
+    <h1> Margin :</h1>
+     <!-- It is used to create a invisible space between the element and the other neighbouring elements, it takes effect ouside the border so any background color applied to the element will not take effect on this, margin can be used to change the position of the element(left,right,center etc) and manage the distance between them.More stuff about the alignment is present in the additional file.-->
+    <p class="box margin">This is margin taking effect.</p>
+
+    <h1>Box sizing :</h1>
+    <h2>Without Box sizing:</h2>
+    <!--By default if we were to apply height and width to a box model then they weill take effect only content and padding and border will add up to the total height and width,increasing them.As shown below, you can see that if you were to calculate the total width(using the formula i mentioned in the additional file)the total width will be more than the total width u assigned -->
+    <p class="box box-sizing1">This is the total width and width applied to content wihtout box sizing property.</p>
+    <h2>With Box sizing:</h2>
+    <!--Now if we apply box sizing property then the total width will be equal to the width that we assigned to the box model or its round about.You can see that by using the box sizing property the 100px is changed to 50px so the total width will be 95px which is near the original width of 100px(100px is the original width of the content excluding the padding etc.)-->
+    <p class="box box-sizing2">This is the total width and width applied to content  box sizing property.</p>
+
+    <h1>Margin collapse :</h1>
+    <p>Information aout margin collapse is present in the additional file, also a image of margin collapse is present in the folder.</p>
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+body{
+    background-color:aliceblue;
+    font-family: cursive;
+    box-sizing: border-box;
+}
+h1,h2{
+    text-align:  center; 
+}
+h1:hover{
+    text-shadow: 5px 6px 30px darkorchid;
+}
+div{
+    margin: 10px;
+    padding: 5px;
+    border: 2px inset black ;
+    box-shadow: 5px 9px 35px -2px #FC46AA;
+    background-color: #FCBACB;
+}
+strong{
+   display: block;
+}
+.ts p:nth-child(5){
+    text-shadow: 7px 5px 4px hotpink;
+}
+table,th,td{
+    border: 2px solid black;
+}
+th,td{
+    background-color: #F2B8C6;
+}
+li:hover{
+    text-shadow: 7px 5px 4px hotpink;
+}
+#outline{
+    outline: 2px solid red;
+}
+#outlineoffset{
+    outline: 2px solid red;
+    outline-offset: 5px;
+}

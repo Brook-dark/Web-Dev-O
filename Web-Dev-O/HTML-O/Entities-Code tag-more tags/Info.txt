@@ -1,0 +1,25 @@
+=========Some important entities:
+&lt; → <
+&gt; → >
+&amp; → &
+&quot; → "
+&#39; or &apos; → '
+&nbsp; → (Non-breaking space)
+&copy; → ©
+&reg; → ®
+&trade; → ™
+&euro; → €
+&pound; → £
+&yen; → ¥
+&deg; → °
+&times; → ×
+&divide; → ÷
+&hellip; → …
+&ndash; → –
+&mdash; → —
+&middot; → ·
+&sect; → §
+&larr; → ←
+&rarr; → →
+&uarr; → ↑
+&darr; → ↓

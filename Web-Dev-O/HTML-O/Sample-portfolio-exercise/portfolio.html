@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic HTML Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <header>
+        <h1>One's Portfolio</h1>
+        <nav>
+            <h2>Navigate to different sections :</h2>
+            <ul>
+                <li>
+                    <a href="#about_me">About me</a>
+                </li>
+                <li>
+                    <a href="#projects">projects</a>
+                </li>
+                <li>
+                    <a href="#contact">contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- about section -->
+        <section id="about_me">
+            <h2>About me :</h2>
+            <table>
+                <tr> 
+                    <th class="main_heading">Things</th>
+                    <th class="main_heading">Description</th>
+                </tr>
+                <tr>
+                    <th>Name :</th>
+                    <td>One(Muhammad Hashir)</td>
+                </tr>
+                <tr>
+                    <th>Age :</th>
+                    <td>16</td>
+                </tr>
+                <tr>
+                    <th>Gender :</th>
+                    <td>Male</td>
+                </tr>
+                <tr>
+                    <th>Country :</th>
+                    <td>Pakistan</td>
+                </tr>
+                <th>Hobbies :</th>
+                <td rowspan="2">Reading books,watching anime,listening to songs,playing chess,Watching vids on youtube.
+                </td>
+            </table>
+            <p></p>
+            <ul>
+                <li>
+                    <p>
+                        <b>
+                            <i>I will link the type of content i watch below :</i>
+                        </b>
+                    </p>
+                </li>
+            </ul>
+            <iframe width="660" height="315" src="https://www.youtube.com/embed/5AVclZc9E_Q?si=FscX4XRsXgkkmCZs"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+            <iframe width="660" height="315" src="https://www.youtube.com/embed/CAb_bCtKuXg?si=QTcak1BcsdwDvMSo"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+        </section>
+
+        <!-- Projects section -->
+        <section id="projects">
+            <h2>Projects made by me :</h2>
+            <p>
+                <i>Here is a list of few mini projects i have made so far :</i>
+            </p>
+            <ol>
+                <li type="i">
+                    A very simple media player.
+                </li>
+                <li type="i">
+                    A form to collect data from user.
+                </li>
+                <li type="i">
+                    A basic portfolio using everthing I learned so far.
+                </li>
+            </ol>
+        </section>
+
+        <!-- contact section -->
+        <section id="contact">
+            <h2>Contact :</h2>
+            <h3>Enter your details below :</h3>
+            <form action="/submit.php" method="post">
+                <div>
+                    <label for="username">Username :</label>
+                    <input type="text" id="username" name="username" required placeholder="Enter your username...">
+                </div>
+                <div>
+                    <label for="password">Password :</label>
+                    <input type="password" id="password" name="password" required placeholder="Enter your password...">
+                </div>
+                <div>
+                    <label for="email">Email : &ensp; &ensp;</label>
+                    <input type="email" name="email" id="email" placeholder="Enter your email(optional)...">
+                </div>
+                <div>
+                    <label for="Query">Ask a question :</label>
+                    <p>
+                        <textarea type="comment" id="Query" name="Query" rows="4" cols="50"
+                            placeholder="Write your query here..."></textarea>
+                    </p>
+                </div>
+                <div>
+                    <label for="submit">Submit :</label>
+                    <button id="submit" name="submit" type="submit">Submit</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Copyright &copy; 2024 Muhammad Hashir</p>
+    </footer>
+
+</body>
+
+</html>
